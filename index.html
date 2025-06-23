@@ -1,1 +1,30 @@
 <!-- html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Currency Exchange</title>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            Currency Exchange
+        </div>
+        <div class="container">
+            <div class="form">
+                <form>
+                <input type="number" id="amount" placeholder="Enter amount" />
+                <br>
+                <label for="fromCurrency">From:</label>
+                <select id="fromCurrency"></select>
+                <label for="toCurrency">To:</label>
+                <select id="toCurrency"></select>
+                <br>
+                <button id="convertButton" onclick="submit">Convert</button>
+                </form>
+            </div>
+            <br>
+            <div class="result">
+                <p class="conversionResult" id="conversionResult"></p>
+            </div>
+    </body>
+</html>
