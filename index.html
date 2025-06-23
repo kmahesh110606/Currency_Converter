@@ -4,27 +4,50 @@
     <head>
         <title>Currency Exchange</title>
         <script src="scripts.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="header">
+            
             Currency Exchange
         </div>
+        <br>
         <div class="container">
+            <div class="gridspace"> </div>
             <div class="form">
                 <form>
-                <input type="number" id="amount" placeholder="Enter amount" />
-                <br>
-                <label for="fromCurrency">From:</label>
-                <select id="fromCurrency"></select>
-                <label for="toCurrency">To:</label>
-                <select id="toCurrency"></select>
-                <br>
-                <button id="convertButton" onclick="submit">Convert</button>
+                    <center>
+                        <label for="amount">Amount:</label>
+                        <input class="input" type="number" id="amount" placeholder="Enter amount">
+                    </center    >
+                        <br>
+                    <div style="display: inline-flex; justify-content:center; align-items: center; width: -webkit-fill-available;">
+                        <div>
+                            <label for="from_Currency">From:</label>
+                            <input class="input" type="text" id="from_Currency">
+                        </div>
+                        <div>
+                            <label for="to_Currency">To:</label>
+                            <input class="input" type="text" id="to_Currency">
+                        </div>
+                    </div>
+                    <br>
+                    <center>
+                        <button id="convertButton" type="submit">Convert</button>
+                    </center>
                 </form>
-            </div>
-            <br>
-            <div class="result">
-                <p class="conversionResult" id="conversionResult"></p>
+                <br>
+                <div class="result">
+                    <p class="conversionResult" id="conversionResult"></p>
+                </div>
+                <div class="last_Updated" >
+                    <p id="lastUpdated"></p>
+                </div>
+                <div class="provider" >
+                    <p id="provider"></p>
+                </div>
             </div>
     </body>
 </html>
